@@ -26,6 +26,6 @@ func MakeEndpoints() Endpoints {
 func makeGet() endpoint.Endpoint {
 	return func(ctx context.Context, request interface{}) (interface{}, error) {
 		log.Println("Entra")
-		return response.OK("Success", nil, nil), nil
+		return response.OK("Success", "testing 1234 6789", nil), nil
 	}
 }
